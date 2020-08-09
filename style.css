@@ -1,0 +1,14 @@
+.parent-div{
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.image{
+    max-width: 70%;
+    text-align: right;
+    margin: auto;
+}
+.hide{
+    display: none;
+}
