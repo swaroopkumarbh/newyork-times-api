@@ -18,6 +18,8 @@ async function getSectionNews(sectionName) {
     sectionDetails.forEach(value => {
         let main = document.createElement("div");
         main.setAttribute("class", "panel panel-default");
+        main.style.marginLeft='10px';
+        main.style.marginRight='10px';
         let pannelheading = document.createElement("div");
         pannelheading.setAttribute("class", "panel-heading");
         let panelTitle = document.createElement("panelTitle");
@@ -46,12 +48,12 @@ async function getSectionNews(sectionName) {
         sectionPara.innerHTML = data.section;
         contentDiv.appendChild(sectionPara);
         let title = document.createElement("h2");
-        title.setAttribute("id", "Title");
+        title.setAttribute("id", "title");
         title.innerHTML = value.title;
         contentDiv.appendChild(title);
         let createdDate = document.createElement("p");
         createdDate.setAttribute("id", "createdDate");
-        createdDate.innerHTML = value.created_date;
+        createdDate.innerHTML = new Date(value.created_date).toString().substring(4,10);
         contentDiv.appendChild(createdDate);
         let abstract = document.createElement("p");
         abstract.setAttribute("id", "abstract");

@@ -12,3 +12,15 @@
 .hide{
     display: none;
 }
+body{
+    background-color: #f3f3e5;
+}
+#title{
+    font-family: 'Oswald', sans-serif;
+}
+#sectionPara{
+padding-left: 2px;
+}
+.message{
+    text-align: center;
+}
